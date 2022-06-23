@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 250px;
+            background-color: blueviolet;
+        }
+
+        .container2 {
+            display: none;
+            width: 250px;
+            background-color: chartreuse;
+            position: absolute;
+            margin-left: 250px;
+            margin-top: -48px;
+        }
+
+        a {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .container a:hover {
+            background-color: chartreuse;
+        }
+
+        .container a:hover .container2 {
+            display: block;
+        }
+
+        .container2 a:hover {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="#" class="active">Home</a>
+        <div class="container2">
+            <a href="#" class="active">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About Us</a>
+        </div>
+        <a href="#">Products</a>
+        <a href="#">About Us</a>
+        <a href="#">Help</a>
+    </div>
+
+
+
+</body>
+
+</html>
